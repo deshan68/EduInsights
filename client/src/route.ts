@@ -2,16 +2,15 @@ import { NonIndexRouteObject } from "react-router-dom";
 import { View } from "./views/Index";
 import React from "react";
 import { isIncludedRole } from "./utils/utils";
-
-// icons
-
 import { Role } from "../src/utils/types";
-import DashboardIcon from "./components/icons/DashboardIcon";
-import UserManagementIcon from "./components/icons/UserManagementIcon";
-import ResultManagementIcon from "./components/icons/ResultManagementIcon";
-import AnalyticsIcon from "./components/icons/AnalyticsIcon";
-import AuditLogsIcon from "./components/icons/AuditLogsIcon";
-import SettingsIcon from "./components/icons/SettingsIcon";
+import {
+  DashboardIcon,
+  AnalyticsIcon,
+  AuditLogsIcon,
+  ResultManagementIcon,
+  SettingsIcon,
+  UserManagementIcon,
+} from "./components/icons";
 
 export interface RouteObjectWithRole extends NonIndexRouteObject {
   allowRoles: Role[];
